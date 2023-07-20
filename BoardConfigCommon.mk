@@ -131,7 +131,7 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+# include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 PRODUCT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
@@ -159,4 +159,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
+# include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
